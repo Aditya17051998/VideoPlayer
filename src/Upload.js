@@ -15,7 +15,7 @@ const Upload=(props)=>  {
     useEffect(()=>{
         if(imagedata  && videodata){
             //console.log('hook',imagedata,videodata);
-            fetch("http://localhost:5000/upload",{
+            fetch("https://backendvideoplayer.herokuapp.com/upload",{
             method:"Post",
             headers:{
                 "Content-Type":"application/json",
